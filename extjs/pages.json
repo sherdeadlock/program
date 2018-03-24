@@ -1,0 +1,28 @@
+[
+    {
+        "text": "form",
+        "children": [
+            {
+                "text": "Simple",
+                "leaf": true,
+                "jsFiles": [
+                    "form/simple.js",
+                ],
+                "main": "qnap.form.simple"
+            }
+        ]
+    },
+    {
+        "text": "tree",
+        "children": [
+            {
+                "text": "Simple",
+                "leaf": true,
+                "jsFiles": [
+                    "tree/simple.js",
+                ],
+                "main": "qnap.tree.simple"
+            }
+        ]
+    }
+]
