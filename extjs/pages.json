@@ -5,10 +5,23 @@
             {
                 "text": "Simple",
                 "leaf": true,
+                "main": "qnap.form.simple",
                 "jsFiles": [
-                    "form/simple.js",
-                ],
-                "main": "qnap.form.simple"
+                    "form/simple.js"
+                ]
+            }
+        ]
+    },
+    {
+        "text": "grid",
+        "children": [
+            {
+                "text": "Simple",
+                "leaf": true,
+                "main": "qnap.grid.simple",
+                "jsFiles": [
+                    "grid/simple.js"
+                ]
             }
         ]
     },
@@ -18,10 +31,10 @@
             {
                 "text": "Simple",
                 "leaf": true,
+                "main": "qnap.tree.simple",
                 "jsFiles": [
-                    "tree/simple.js",
-                ],
-                "main": "qnap.tree.simple"
+                    "tree/simple.js"
+                ]
             }
         ]
     }

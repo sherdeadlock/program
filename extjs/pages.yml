@@ -1,0 +1,22 @@
+- text: form
+  children:
+      - text: Simple
+        leaf: true
+        main: qnap.form.simple
+        jsFiles:
+            - form/simple.js
+- text: grid
+  children:
+      - text: Simple
+        leaf: true
+        main: qnap.grid.simple
+        jsFiles:
+            - grid/simple.js
+- text: tree
+  children:
+      - text: Simple
+        leaf: true
+        main: qnap.tree.simple
+        jsFiles:
+            - tree/simple.js
+
