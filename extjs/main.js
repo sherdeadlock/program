@@ -22,7 +22,7 @@ const TreeNav = Ext.extend(Ext.tree.TreePanel, {
 			const {main, jsFiles} = node.attributes;
 			Ext.Loader.load(jsFiles, () => {
 				this.fireEvent('pagechanged', main, jsFiles);
-			});
+			}, null, true);
 		}
 	},
 });

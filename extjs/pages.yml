@@ -17,6 +17,12 @@
         main: qnap.grid.simple
         jsFiles:
             - grid/simple.js
+      - text: Group
+        leaf: true
+        main: qnap.grid.group
+        jsFiles:
+            - fixtures/fixtures.js
+            - grid/group.js
 - text: tree
   children:
       - text: Simple

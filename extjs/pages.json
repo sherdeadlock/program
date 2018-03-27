@@ -1,49 +1,58 @@
 [
     {
-        "text": "form",
         "children": [
             {
-                "text": "Simple",
-                "main": "qnap.form.simple",
                 "leaf": true,
+                "main": "qnap.form.simple",
                 "jsFiles": [
                     "form/simple.js"
-                ]
+                ],
+                "text": "Simple"
             },
             {
-                "text": "Validation",
-                "main": "qnap.form.validation",
                 "leaf": true,
+                "main": "qnap.form.validation",
                 "jsFiles": [
                     "form/validation.js"
-                ]
+                ],
+                "text": "Validation"
             }
-        ]
+        ],
+        "text": "form"
     },
     {
-        "text": "grid",
         "children": [
             {
-                "text": "Simple",
-                "main": "qnap.grid.simple",
                 "leaf": true,
+                "main": "qnap.grid.simple",
                 "jsFiles": [
                     "grid/simple.js"
-                ]
+                ],
+                "text": "Simple"
+            },
+            {
+                "leaf": true,
+                "main": "qnap.grid.group",
+                "jsFiles": [
+                    "fixtures/fixtures.js",
+                    "grid/group.js"
+                ],
+                "text": "Group"
             }
-        ]
+        ],
+        "text": "grid"
     },
     {
-        "text": "tree",
         "children": [
             {
-                "text": "Simple",
-                "main": "qnap.tree.simple",
                 "leaf": true,
+                "main": "qnap.tree.simple",
                 "jsFiles": [
                     "tree/simple.js"
-                ]
+                ],
+                "text": "Simple"
             }
-        ]
+        ],
+        "text": "tree"
     }
 ]
