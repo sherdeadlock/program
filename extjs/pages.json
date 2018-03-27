@@ -4,10 +4,18 @@
         "children": [
             {
                 "text": "Simple",
-                "leaf": true,
                 "main": "qnap.form.simple",
+                "leaf": true,
                 "jsFiles": [
                     "form/simple.js"
+                ]
+            },
+            {
+                "text": "Validation",
+                "main": "qnap.form.validation",
+                "leaf": true,
+                "jsFiles": [
+                    "form/validation.js"
                 ]
             }
         ]
@@ -17,8 +25,8 @@
         "children": [
             {
                 "text": "Simple",
-                "leaf": true,
                 "main": "qnap.grid.simple",
+                "leaf": true,
                 "jsFiles": [
                     "grid/simple.js"
                 ]
@@ -30,8 +38,8 @@
         "children": [
             {
                 "text": "Simple",
-                "leaf": true,
                 "main": "qnap.tree.simple",
+                "leaf": true,
                 "jsFiles": [
                     "tree/simple.js"
                 ]

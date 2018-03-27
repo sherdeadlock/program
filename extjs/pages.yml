@@ -5,6 +5,11 @@
         main: qnap.form.simple
         jsFiles:
             - form/simple.js
+      - text: Validation
+        leaf: true
+        main: qnap.form.validation
+        jsFiles:
+            - form/validation.js
 - text: grid
   children:
       - text: Simple
