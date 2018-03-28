@@ -30,4 +30,10 @@
         main: qnap.tree.simple
         jsFiles:
             - tree/simple.js
+      - text: TreeGrid
+        leaf: true
+        main: qnap.tree.treegrid
+        jsFiles:
+            - fixtures/fixtures.js
+            - tree/treegrid.js
 

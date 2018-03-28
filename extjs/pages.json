@@ -2,20 +2,20 @@
     {
         "children": [
             {
+                "text": "Simple",
                 "leaf": true,
-                "main": "qnap.form.simple",
                 "jsFiles": [
                     "form/simple.js"
                 ],
-                "text": "Simple"
+                "main": "qnap.form.simple"
             },
             {
+                "text": "Validation",
                 "leaf": true,
-                "main": "qnap.form.validation",
                 "jsFiles": [
                     "form/validation.js"
                 ],
-                "text": "Validation"
+                "main": "qnap.form.validation"
             }
         ],
         "text": "form"
@@ -23,21 +23,21 @@
     {
         "children": [
             {
+                "text": "Simple",
                 "leaf": true,
-                "main": "qnap.grid.simple",
                 "jsFiles": [
                     "grid/simple.js"
                 ],
-                "text": "Simple"
+                "main": "qnap.grid.simple"
             },
             {
+                "text": "Group",
                 "leaf": true,
-                "main": "qnap.grid.group",
                 "jsFiles": [
                     "fixtures/fixtures.js",
                     "grid/group.js"
                 ],
-                "text": "Group"
+                "main": "qnap.grid.group"
             }
         ],
         "text": "grid"
@@ -45,12 +45,21 @@
     {
         "children": [
             {
+                "text": "Simple",
                 "leaf": true,
-                "main": "qnap.tree.simple",
                 "jsFiles": [
                     "tree/simple.js"
                 ],
-                "text": "Simple"
+                "main": "qnap.tree.simple"
+            },
+            {
+                "text": "TreeGrid",
+                "leaf": true,
+                "jsFiles": [
+                    "fixtures/fixtures.js",
+                    "tree/treegrid.js"
+                ],
+                "main": "qnap.tree.treegrid"
             }
         ],
         "text": "tree"
