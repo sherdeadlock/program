@@ -19,10 +19,18 @@ const TreeNav = Ext.extend(Ext.tree.TreePanel, {
 
 	onClick(node, event) {
 		if (node.leaf) {
-			const {main, jsFiles} = node.attributes;
+			const {main, jsFiles, cssFiles=[]} = node.attributes;
+            // load js
 			Ext.Loader.load(jsFiles, () => {
 				this.fireEvent('pagechanged', main, jsFiles);
 			}, null, true);
+
+            // load css
+            for (var i = 0, len = cssFiles.length; i < len; i++) {
+                let css = cssFiles[i];
+                let id = main + i;
+                Ext.util.CSS.swapStyleSheet(id, css);
+            }
 		}
 	},
 });
