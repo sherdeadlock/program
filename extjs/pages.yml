@@ -36,4 +36,28 @@
         jsFiles:
             - fixtures/fixtures.js
             - tree/treegrid.js
-
+- text: template
+  children:
+      - text: XTemplate
+        leaf: true
+        main: qnap.tpl.xtemplate
+        jsFiles:
+            - fixtures/fixtures.js
+            - tpl/xtemplate.js
+- text: popup
+  children:
+      - text: Context Menu
+        leaf: true
+        main: qnap.popup.contextmenu
+        jsFiles:
+            - popup/menu.js
+      - text: Dropdown Button
+        leaf: true
+        main: qnap.popup.dropdown
+        jsFiles:
+            - popup/dropdown.js
+      - text: Tooltip
+        leaf: true
+        main: qnap.popup.tooltip
+        jsFiles:
+            - popup/tooltip.js

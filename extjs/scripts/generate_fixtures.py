@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import random
 import string
 import json
@@ -25,7 +27,7 @@ def gen_users():
         users.append(user)
 
     str_json = json.dumps(users)
-    with open('fixtures/users.json', 'w', encoding='utf-8') as f:
+    with open('/tmp/users.json', 'w', encoding='utf-8') as f:
         f.write(str_json)
 
 
