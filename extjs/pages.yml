@@ -61,3 +61,18 @@
         main: qnap.popup.tooltip
         jsFiles:
             - popup/tooltip.js
+- text: fx
+  children:
+      - text: Transition
+        leaf: true
+        main: qnap.fx.transition
+        jsFiles:
+            - fx/transition.js
+- text: func
+  children:
+      - text: Queue
+        leaf: true
+        main: qnap.func.queue
+        jsFiles:
+            - fixtures/fixtures.js
+            - func/queue.js

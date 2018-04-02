@@ -1,6 +1,6 @@
 (function() {
-    'use strict';
-    Ext.ns('qnap.popup');
+'use strict';
+Ext.ns('qnap.popup');
 
 
 let panel = new Ext.Panel({
