@@ -36,6 +36,11 @@
         jsFiles:
             - fixtures/fixtures.js
             - tree/treegrid.js
+      - text: DataBinding
+        leaf: true
+        main: qnap.tree.databinding
+        jsFiles:
+            - tree/databinding.js
 - text: template
   children:
       - text: XTemplate
@@ -76,3 +81,19 @@
         jsFiles:
             - fixtures/fixtures.js
             - func/queue.js
+- text: iocn
+  children:
+      - text: Font Awesome
+        leaf: true
+        main: qnap.icon.fontawesome
+        jsFiles:
+            - icon/fontawesome.js
+- text: d3
+  children:
+      - text: d3
+        leaf: true
+        main: qnap.d3.xychart
+        jsFiles:
+            - d3/xychart.js
+        cssFiles:
+            - d3/xychart.css

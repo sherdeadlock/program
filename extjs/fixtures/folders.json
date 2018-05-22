@@ -2,7 +2,8 @@
 	id: 1,
 	text: 'A leaf Node',
 	leaf: true
-},{
+}
+,{
 	id: 2,
 	text: 'A folder Node',
 	children: [{
@@ -10,4 +11,65 @@
 		text: 'A child Node',
 		leaf: true
 	}]
-}]
+}
+, {
+    id: 4
+    , text: 'Node 4'
+    , leaf: true
+}
+, {
+    id: 5
+    , text: 'Node 5'
+    , leaf: true
+}
+, {
+    id: 6
+    , text: 'Node 6'
+    , leaf: true
+}
+, {
+    id: 7
+    , text: 'Node 7'
+    , leaf: true
+}
+, {
+    id: 8
+    , text: 'Node 8'
+    , leaf: true
+}
+, {
+    id: 9
+    , text: 'Node 9'
+    , leaf: true
+}
+, {
+    id: 10
+    , text: 'Node 10'
+    , leaf: true
+}
+, {
+    id: 11
+    , text: 'Node 11'
+    , leaf: true
+}
+, {
+    id: 12
+    , text: 'Node 12'
+    , leaf: true
+}
+, {
+    id: 13
+    , text: 'Node 13'
+    , leaf: true
+}
+, {
+    id: 14
+    , text: 'Node 14'
+    , leaf: true
+}
+, {
+    id: 15
+    , text: 'Node 15'
+    , leaf: true
+}
+]

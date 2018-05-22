@@ -11,12 +11,20 @@ Ext.ns('qnap.func');
 function ajaxRequestPromise(options) {
     return new Promise((resolve, reject) => {
         Ext.apply(options, {
-            success(response, options) {
-                resolve(response);
-            },
-            failure(response, options) {
-                reject(response);
-            },
+            callback(options, success, response) {
+                if (success) {
+                    resolve(response);
+                }
+                else {
+                    reject(response);
+                }
+            }
+            // success(response, options) {
+            //     resolve(response);
+            // },
+            // failure(response, options) {
+            //     reject(response);
+            // },
         });
         Ext.Ajax.request(options);
     });
@@ -37,13 +45,25 @@ function queueWorker(queue, tasks, next) {
         .catch(error => {
             console.error('failure', error);
         })
-        .finally(() => {
+        .then(() => {
             next();
         });
     } else{
         console.log(queue.length(), tasks);
         next();
     }
+}
+
+
+function oneByOneWorker(tasks) {
+    console.log(`send requesst ${tasks[0]}`);
+    return ajaxRequestPromise({url: `fixtures/users${tasks[0]}.json`})
+        .then(result => {
+            console.log(`success ${tasks[0]}`, result);
+        })
+        .catch(error => {
+            console.log(`failure ${tasks[0]}`, error);
+        });
 }
 
 // endregion Queue
@@ -84,6 +104,59 @@ function loadPromise(store, options) {
 // endregion Queue
 
 
+function timeout(task, milliseconds) {
+    var timeoutID;
+    var promise = task().then(function(result) {
+        clearTimeout(timeoutID);
+        return result;
+    });
+
+    return Promise.race([
+        promise,
+        new Promise(function(resolve, reject) {
+            timeoutID = setTimeout(function() {
+                reject();
+            }, milliseconds);
+        })
+    ]);
+}
+
+function testTimeoutSuccess() {
+    function task() {
+        return new Promise(function(resolve, reject) {
+            setTimeout(function() {
+                resolve('success');
+            }, 2000);
+        });
+    }
+
+    timeout(task, 3000)
+    .then(function(result) {
+        console.log('1. success', result);
+    })
+    .catch(function(error) {
+        console.log('1. failure', error);
+    });
+}
+
+function testTimeoutFailure() {
+    timeout(function() {
+        return new Promise(function(resolve, reject) {
+            setTimeout(function() {
+                console.log('success job');
+                resolve('success');
+            }, 4000);
+        });
+    }, 3000)
+    .then(function(result) {
+        console.log('2. success', result);
+    })
+    .catch(function(error) {
+        console.log('2. failure', error);
+    });
+}
+
+
 var panel = new Ext.Panel({
     count: 0,
 
@@ -115,6 +188,18 @@ var panel = new Ext.Panel({
         }]);
     },
 
+    onOneByOneQueue() {
+        this.queue2.push([1, 2, 3, 4, 5, 6, 7]);
+    },
+
+    onTimeoutSuccess() {
+        testTimeoutSuccess();
+    },
+
+    onTimeoutFailure() {
+        testTimeoutFailure();
+    },
+
     items: [
         {
             xtype: 'button',
@@ -131,16 +216,35 @@ var panel = new Ext.Panel({
             text: 'Add Queue',
             ref: 'addQueue',
         },
+        {
+            xtype: 'button',
+            text: 'Start One By One Queue',
+            ref: 'oneByOneQueueBtn',
+        },
+        {
+            xtype: 'button',
+            text: 'test timeout',
+            ref: 'testTimeoutBtn',
+        },
+        {
+            xtype: 'button',
+            text: 'test timeout failure',
+            ref: 'testTimeoutFailureBtn',
+        },
     ],
 
     listeners: {
         afterrender(self) {
-            self.queue = new qnap.util.Queue(queueWorker);
+            self.queue = new qnap.util.Queue(queueWorker, 1, 2);
+            self.queue2 = new qnap.util.Queue(oneByOneWorker, 1, 1);
 
             // bind events
             self.loadSuccessBtn.setHandler(self.onLoadSuccess, self);
             self.loadFailureBtn.setHandler(self.onLoadFailure, self);
             self.addQueue.setHandler(self.onAddQueue, self);
+            self.oneByOneQueueBtn.setHandler(self.onOneByOneQueue, self);
+            self.testTimeoutBtn.setHandler(self.onTimeoutSuccess, self);
+            self.testTimeoutFailureBtn.setHandler(self.onTimeoutFailure, self);
         },
     },
 });

@@ -2,20 +2,20 @@
     {
         "children": [
             {
+                "main": "qnap.form.simple",
                 "leaf": true,
                 "text": "Simple",
                 "jsFiles": [
                     "form/simple.js"
-                ],
-                "main": "qnap.form.simple"
+                ]
             },
             {
+                "main": "qnap.form.validation",
                 "leaf": true,
                 "text": "Validation",
                 "jsFiles": [
                     "form/validation.js"
-                ],
-                "main": "qnap.form.validation"
+                ]
             }
         ],
         "text": "form"
@@ -23,21 +23,21 @@
     {
         "children": [
             {
+                "main": "qnap.grid.simple",
                 "leaf": true,
                 "text": "Simple",
                 "jsFiles": [
                     "grid/simple.js"
-                ],
-                "main": "qnap.grid.simple"
+                ]
             },
             {
+                "main": "qnap.grid.group",
                 "leaf": true,
                 "text": "Group",
                 "jsFiles": [
                     "fixtures/fixtures.js",
                     "grid/group.js"
-                ],
-                "main": "qnap.grid.group"
+                ]
             }
         ],
         "text": "grid"
@@ -45,21 +45,29 @@
     {
         "children": [
             {
+                "main": "qnap.tree.simple",
                 "leaf": true,
                 "text": "Simple",
                 "jsFiles": [
                     "tree/simple.js"
-                ],
-                "main": "qnap.tree.simple"
+                ]
             },
             {
+                "main": "qnap.tree.treegrid",
                 "leaf": true,
                 "text": "TreeGrid",
                 "jsFiles": [
                     "fixtures/fixtures.js",
                     "tree/treegrid.js"
-                ],
-                "main": "qnap.tree.treegrid"
+                ]
+            },
+            {
+                "main": "qnap.tree.databinding",
+                "leaf": true,
+                "text": "DataBinding",
+                "jsFiles": [
+                    "tree/databinding.js"
+                ]
             }
         ],
         "text": "tree"
@@ -67,13 +75,13 @@
     {
         "children": [
             {
+                "main": "qnap.tpl.xtemplate",
                 "leaf": true,
                 "text": "XTemplate",
                 "jsFiles": [
                     "fixtures/fixtures.js",
                     "tpl/xtemplate.js"
-                ],
-                "main": "qnap.tpl.xtemplate"
+                ]
             }
         ],
         "text": "template"
@@ -81,28 +89,28 @@
     {
         "children": [
             {
+                "main": "qnap.popup.contextmenu",
                 "leaf": true,
                 "text": "Context Menu",
                 "jsFiles": [
                     "popup/menu.js"
-                ],
-                "main": "qnap.popup.contextmenu"
+                ]
             },
             {
+                "main": "qnap.popup.dropdown",
                 "leaf": true,
                 "text": "Dropdown Button",
                 "jsFiles": [
                     "popup/dropdown.js"
-                ],
-                "main": "qnap.popup.dropdown"
+                ]
             },
             {
+                "main": "qnap.popup.tooltip",
                 "leaf": true,
                 "text": "Tooltip",
                 "jsFiles": [
                     "popup/tooltip.js"
-                ],
-                "main": "qnap.popup.tooltip"
+                ]
             }
         ],
         "text": "popup"
@@ -110,12 +118,12 @@
     {
         "children": [
             {
+                "main": "qnap.fx.transition",
                 "leaf": true,
                 "text": "Transition",
                 "jsFiles": [
                     "fx/transition.js"
-                ],
-                "main": "qnap.fx.transition"
+                ]
             }
         ],
         "text": "fx"
@@ -123,15 +131,44 @@
     {
         "children": [
             {
+                "main": "qnap.func.queue",
                 "leaf": true,
                 "text": "Queue",
                 "jsFiles": [
                     "fixtures/fixtures.js",
                     "func/queue.js"
-                ],
-                "main": "qnap.func.queue"
+                ]
             }
         ],
         "text": "func"
+    },
+    {
+        "children": [
+            {
+                "main": "qnap.icon.fontawesome",
+                "leaf": true,
+                "text": "Font Awesome",
+                "jsFiles": [
+                    "icon/fontawesome.js"
+                ]
+            }
+        ],
+        "text": "iocn"
+    },
+    {
+        "children": [
+            {
+                "main": "qnap.d3.xychart",
+                "cssFiles": [
+                    "d3/xychart.css"
+                ],
+                "leaf": true,
+                "text": "d3",
+                "jsFiles": [
+                    "d3/xychart.js"
+                ]
+            }
+        ],
+        "text": "d3"
     }
 ]
