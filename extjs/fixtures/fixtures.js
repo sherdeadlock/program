@@ -1,5 +1,3 @@
-(function () {
-'use strict';
 Ext.ns('qnap.fixtures');
 
 qnap.fixtures.userReader = new Ext.data.JsonReader({
@@ -73,5 +71,3 @@ qnap.fixtures.userColModel = new Ext.grid.ColumnModel({
     columns: qnap.fixtures.userColumns,
 });
 
-
-}());

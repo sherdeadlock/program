@@ -1,5 +1,3 @@
-(function() {
-'use strict';
 Ext.ns('qnap.tree');
 
 
@@ -153,5 +151,3 @@ store.tree = tree;
 
 
 qnap.tree.treegrid = tree;
-
-}());

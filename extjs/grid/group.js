@@ -1,5 +1,3 @@
-(function () {
-'use strict';
 Ext.ns('qnap.grid');
 
 
@@ -28,4 +26,3 @@ store.groupBy('active', false, 'DESC');
 
 qnap.grid.group = grid;
 
-}());

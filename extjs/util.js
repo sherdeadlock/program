@@ -1,5 +1,3 @@
-(function () {
-'use strict';
 Ext.ns('qnap.util');
 
 
@@ -267,6 +265,4 @@ qnap.util.humanCompare = (function() {
             return 1;
         }
     }
-}());
-
 }());

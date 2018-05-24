@@ -1,4 +1,3 @@
-(function() {
 Ext.ns('qnap.d3');
 
 var data = [ { label: "Data Set 1",
@@ -168,4 +167,3 @@ var panel = new Ext.Panel({
 });
 
 qnap.d3.xychart = new chart();
-}());

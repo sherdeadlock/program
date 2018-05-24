@@ -1,5 +1,3 @@
-(function() {
-'use strict';
 Ext.ns('qnap.tree');
 
 var TreexNodeUI = Ext.extend(Ext.tree.TreeNodeUI, {
@@ -55,7 +53,9 @@ var TreexNode = Ext.extend(Ext.tree.TreeNode, {
         }
 
         Ext.apply(prev, next);
-        me.ui.refreshUI();
+		if (me.ui.refreshUI) {
+			me.ui.refreshUI();
+		}
     }
 });
 
@@ -202,6 +202,3 @@ var panel = new Ext.Panel({
 
 
 qnap.tree.databinding = panel;
-
-}());
-

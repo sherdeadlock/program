@@ -1,5 +1,3 @@
-(function () {
-'use strict';
 Ext.ns('qnap.form');
 
 const RenderField = Ext.extend(Ext.form.DisplayField, {
@@ -181,6 +179,4 @@ let simple = new Ext.Container({
 });
 
 qnap.form.simple = simple;
-
-}());
 

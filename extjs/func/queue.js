@@ -1,5 +1,3 @@
-(function() {
-'use strict';
 Ext.ns('qnap.func');
 
 
@@ -251,5 +249,3 @@ var panel = new Ext.Panel({
 
 
 qnap.func.queue = panel;
-
-}());

@@ -1,5 +1,3 @@
-(function() {
-'use strict';
 Ext.ns('qnap.popup');
 
 
@@ -50,4 +48,3 @@ let panel = new Ext.Panel({
 Ext.QuickTips.init();
 qnap.popup.tooltip = panel;
 
-}());

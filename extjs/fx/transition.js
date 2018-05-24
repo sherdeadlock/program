@@ -1,5 +1,3 @@
-(function() {
-'use strict';
 Ext.ns('qnap.fx');
 
 
@@ -64,5 +62,3 @@ let panel = new Ext.Panel({
 
 qnap.fx.transition = panel;
 
-
-}());

@@ -1,5 +1,3 @@
-(function() {
-'use strinct';
 Ext.ns('qnap.tpl');
 
 let store = new Ext.data.Store({
@@ -30,4 +28,3 @@ let view = new Ext.DataView({
 
 qnap.tpl.xtemplate = view;
 
-}());

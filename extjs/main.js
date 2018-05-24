@@ -1,6 +1,14 @@
-(function () {
-'use strict';
-Ext.ns('qnap');
+import './fixtures/fixtures.js';
+import './util.js';
+import './form/module.js';
+import './tree/module.js';
+import './d3/module.js';
+import './func/module.js';
+import './fx/module.js';
+import './grid/module.js';
+import './popup/module.js';
+import './tpl/module.js';
+import './icon/module.js';
 
 
 /**
@@ -21,9 +29,10 @@ const TreeNav = Ext.extend(Ext.tree.TreePanel, {
 		if (node.leaf) {
 			const {main, jsFiles, cssFiles=[]} = node.attributes;
             // load js
-			Ext.Loader.load(jsFiles, () => {
-				this.fireEvent('pagechanged', main, jsFiles);
-			}, null, true);
+			// Ext.Loader.load(jsFiles, () => {
+			// 	this.fireEvent('pagechanged', main, jsFiles);
+			// }, null, true);
+			this.fireEvent('pagechanged', main, jsFiles);
 
             // load css
             for (var i = 0, len = cssFiles.length; i < len; i++) {
@@ -81,5 +90,3 @@ let main = function () {
 };
 
 Ext.onReady(main);
-
-}());

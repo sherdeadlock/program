@@ -1,4 +1,3 @@
-(function () {
 Ext.ns('qnap.grid');
 
 
@@ -118,7 +117,5 @@ let grid = new Ext.grid.GridPanel({
 });
 
 qnap.grid.simple = grid;
-
-}());
 
 

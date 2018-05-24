@@ -1,5 +1,3 @@
-(function() {
-'use strict';
 Ext.ns('qnap.tree');
 
 var tree = new Ext.tree.TreePanel({
@@ -20,7 +18,6 @@ var tree = new Ext.tree.TreePanel({
 	}),
 });
 
-tree.expandAll();
 
 
 var panel = new Ext.Panel({
@@ -42,7 +39,4 @@ var panel = new Ext.Panel({
     ],
 });
 
-
 qnap.tree.simple = panel;
-
-}());
