@@ -106,3 +106,9 @@
 * http://lorempixel.com/400/200/
 * http://loremflickr.com/320/240
 * http://placehold.it/350x150
+
+# Web Component
+
+* polyfill https://github.com/WebComponents/webcomponentsjs
+* github components https://github.com/search?p=1&q=topic%3Aweb-components+org%3Agithub&type=Repositories
+
