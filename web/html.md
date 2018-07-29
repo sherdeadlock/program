@@ -359,6 +359,7 @@ function $fadeIn(el) {
       - [WCAG](http://www.w3.org/TR/WAI-WEBCONTENT/)
       - [Role Attribute](http://www.w3.org/TR/role-attribute/)
       - [WAI-ARIA](http://www.w3.org/TR/wai-aria/)
+	* [URI](https://tools.ietf.org/html/rfc3986)
 - Security
   - [CSRF](http://en.wikipedia.org/wiki/Cross-site_request_forgery)
   - [XSS](http://en.wikipedia.org/wiki/Cross-site_scripting)
