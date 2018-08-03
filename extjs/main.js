@@ -50,18 +50,20 @@ const TreeNav = Ext.extend(Ext.tree.TreePanel, {
  */
 const PageView = Ext.extend(Ext.Container, {
 	flex: 1,
-	layout: 'fit',
+	layout: 'card',
 
 	loadPage(pageNS) {
-		this.items.clear();
 		const page = qnap.util.loadNS(pageNS);
 		if (page == null) {
 			Ext.MessageBox.alert(String.format('page not found {0}', pageNS));
 			return;
 		}
 
-		this.items.add(page);
-		this.doLayout();
+		if (!page.rendered) {
+			this.items.add(page);
+		}
+
+		this.layout.setActiveItem(page.id);
 	},
 });
 
