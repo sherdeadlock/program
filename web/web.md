@@ -120,3 +120,10 @@
 	* putState
 	* windows.onpopstate
 * location
+
+# Service worker
+
+* https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/
+* https://github.com/facebook/create-react-app/blob/next/packages/react-scripts/template/src/serviceWorker.js
+* https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#making-a-progressive-web-app
+
