@@ -111,6 +111,7 @@
 
 * polyfill https://github.com/WebComponents/webcomponentsjs
 * github components https://github.com/search?p=1&q=topic%3Aweb-components+org%3Agithub&type=Repositories
+* [Using custom elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)
 
 
 # Route
