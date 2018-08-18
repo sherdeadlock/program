@@ -3,11 +3,6 @@ process.env.NODE_ENV !== 'production'
 ```
 * https://github.com/dypsilon/frontend-dev-bookmarks
 * https://github.com/moklick/frontend-stuff
-* http://nodeschool.io/
-* https://medium.freecodecamp.com/my-giant-javascript-basics-course-is-now-live-on-youtube-and-its-100-free-9020a21bbc27
-* https://es6.io/
-* https://javascript30.com/
-* https://reactforbeginners.com/
 * https://tc39.github.io/ecma262/
 
 
@@ -29,128 +24,32 @@ process.env.NODE_ENV !== 'production'
 
 # dev tool
 * [nodemon](https://github.com/remy/nodemon) monitor and restart the server
-* [node-sass](https://github.com/sass/node-sass)
 * [betwixt](https://github.com/kdzwinel/betwixt) analyze web traffic outside the browser
 
 # Tutorial
 * [JS The Right Way](http://jstherightway.org/zh-tw/)
 * es6
-  * [learn-es2015](https://babeljs.io/docs/learn-es2015/)
-  * [es6-features](http://es6-features.org/)
-  * https://es6.io/
-* [ConciseJS](https://slides.com/concise/js/fullscreen#/)
-* [js style guide](https://github.com/airbnb/javascript)
+	* [learn-es2015](https://babeljs.io/docs/learn-es2015/)
+	* [es6-features](http://es6-features.org/)
 * https://github.com/getify/You-Dont-Know-JS
 * https://www.debuggex.com/cheatsheet/regex/javascript
-* from zero to front end hero
-  * https://medium.freecodecamp.com/from-zero-to-front-end-hero-part-1-7d4f7f0bff02#.s5rrcbhbw
-  * https://medium.freecodecamp.com/from-zero-to-front-end-hero-part-2-adfa4824da9b#.xp020c6h1
 * [MDN Learn](https://developer.mozilla.org/en-US/Learn)
 * https://github.com/bolshchikov/js-must-watch
-
-# 初心者
-- [JS CodeSchool](https://www.codeschool.com/paths/javascript)
-- [HTML & CSS](https://www.codeschool.com/paths/html-css)
-- [JS CodeCademy](http://www.codecademy.com/zh/tracks/javascript)
-- [Try jQuery](https://www.codeschool.com/courses/try-jquery)
-- [CodeSchool](http://campus.codeschool.com/courses/real-time-web-with-node-js)
-
 - [canvas tutorial](http://www.html5canvastutorials.com/)
-- [essential-javascript-links](https://github.com/ericelliott/essential-javascript-links)
-* [JavaScript Standard Style](http://standardjs.com/)
-* [html5doctor](http://html5doctor.com/)
 * books
-  * https://github.com/substack/stream-handbook
-  * https://drboolean.gitbooks.io/mostly-adequate-guide/content/ fp
-  * https://github.com/shichuan/javascript-patterns
+	* https://github.com/substack/stream-handbook
+	* https://drboolean.gitbooks.io/mostly-adequate-guide/content/ fp
+	* https://github.com/shichuan/javascript-patterns
 * http://thibaultlaurens.github.io/javascript/2013/04/29/how-the-v8-engine-works/
 * https://codeforgeek.com/2016/06/node-js-redis-tutorial-building-email-verification-system/  eamil 認證
+* you don't need jquery
+	* http://youmightnotneedjquery.com/
+	* http://www.catswhocode.com/blog/javascript-without-jquery-tips-and-practical-examples without jquery
+	* https://github.com/oneuijs/You-Dont-Need-jQuery
 
-you don't need jquery
-* http://youmightnotneedjquery.com/
-* http://www.catswhocode.com/blog/javascript-without-jquery-tips-and-practical-examples without jquery
-* https://github.com/oneuijs/You-Dont-Need-jQuery
-
-
-# cheatsheet
-* [ejs](https://github.com/mde/ejs/blob/master/docs/syntax.md)
-
-
-# nvm
-* nvm run 0.10.32 app.js                Run app.js using node v0.10.32
-* nvm exec 0.10.32 node app.js          Run `node app.js` with the PATH pointing to node v0.10.32
-
-
-# 測試環境
-### node
-執行 node, 以下的 sample 都用 node 執行測試。
-```
-$ node
-> console.log("hello world");
-hello world
-undefined
-> var x = 1;
-undefined
-> x
-1
-> 1 + 1
-2
-```
-或者在一個檔案裡面編輯 js code, mylib.js
-```javascript
-console.log("hello world");
-var x = 1;
-console.log(x);
-```
-執行
-```
-$ node mylib.js
-```
-
-### shebang
-又或者用 shebang 的方式, myexec.js
-```
-#!/usr/bin/env node
-
-console.log("Hello World");
-```
-需要加上執行權限
-```
-$ chmod +x myexec.js
-```
-執行
-```
-$ ./myexec.js
-```
-
-### Browser
-開啟 file: myweb.html, 在 script tag 寫 javascirpt
-```html
-<!DOCTYPE html>
-<html>
-    <meta charset="utf-8">
-    <head>
-        <title>Example</Title>
-        <script>
-            console.log("Hello World");
-        </script>
-    </head>
-    <body>
-    </body>
-</html>
-```
-Browser 開啟 myweb.html, 看 console.log
-
-- FireFox
-    Menu: 工具 -> 網頁開發者 -> 網頁主控臺
-
-- Chrome
-    右上 Button: More Tools -> JavaScript Console
 
 # FAQ
-* closure vs prototype
-* closure vs bind
-  * http://stackoverflow.com/questions/17638305/why-is-bind-slower-than-a-closure
+* http://stackoverflow.com/questions/17638305/why-is-bind-slower-than-a-closure
 
 # Module
 * https://gist.github.com/branneman/8048520
@@ -243,10 +142,6 @@ const obj = {
 - http://devdocs.io/javascript/operators/this
 
 
-# prototype
-- http://www.codedata.com.tw/javascript/essential-javascript-15-prototype/
-
-
 # Module
 - http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html
 
@@ -256,16 +151,11 @@ const obj = {
 
 
 # trick
-* http://jsperf.com/math-round-vs-hack/3 round
 * http://stackoverflow.com/questions/19357978/indirect-eval-call-in-strict-mode indirect call
 
 
 # async
 * thunk -> promise -> generator -> async/await
-* http://liubin.github.io/promises-book/
-* async/await
-    * https://zeit.co/blog/async-and-await
-    * https://egghead.io/courses/asynchronous-javascript-with-async-await
 * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 * https://strongloop.com/strongblog/how-to-generators-node-js-yield-use-cases/
 * http://huli.logdown.com/posts/292655-javascript-promise-generator-async-es6
@@ -285,26 +175,7 @@ const obj = {
   * https://medium.com/@WendellLiu/%E5%88%A5%E9%80%99%E6%A8%A3%E4%BD%BF%E7%94%A8promise-d4f5a731adb4#.vbpdqx34w 別這樣使用Promise
 
 
-# framework
-- [nodeframework](http://nodeframework.com/)
-- CMS
-  * https://jekyllrb.com/ blog
-  * http://keystonejs.com/
-  - http://apostrophenow.org/
-  * [hexo](https://hexo.io/) blog
-  * [metalsmith](https://github.com/metalsmith/metalsmith)
-  * [gatsby](https://github.com/gatsbyjs/gatsby) reactjs blog
-* https://github.com/krakenjs/kraken-js expressjs + dust template
-* https://github.com/paypal/react-engine
-
-# boilerplate
-* https://github.com/sahat/hackathon-starter
-* https://github.com/google/web-starter-kit
-* http://www.clementinejs.com/
-
-
 # lib
-* http://libscore.com/
 * https://npms.io/
 * http://component.github.io/
 * http://microjs.com
@@ -313,7 +184,7 @@ const obj = {
 	* [moment](http://momentjs.com/)
 	* [fecha](https://github.com/taylorhakes/fecha)
 	* [date-fns](https://github.com/date-fns/date-fns)
-- [async](https://github.com/caolan/async#user-content-documentation)
+- [async](https://github.com/caolan/async)
   - retry
 * [fbjs](https://github.com/facebook/fbjs)
 - throttle
@@ -322,15 +193,9 @@ const obj = {
 - [immutable](https://github.com/facebook/immutable-js/)
 - [globalize](https://github.com/jquery/globalize)
 - [forever](https://www.npmjs.com/package/forever)
-- [bson](https://github.com/mongodb/js-bson)
-- [nexe](https://github.com/jaredallard/nexe)
-  create a single executable out of your [node/io].js app
 - [deep-equal](https://github.com/substack/node-deep-equal)
 * [is.js](https://github.com/arasatasaygin/is.js) 當做 snippet 參考
 * [core-decorators](https://github.com/jayphelps/core-decorators.js) decorator
-* [sliced](https://www.npmjs.com/package/sliced) A faster alternative to [].slice.call(arguments).
-* [json3](https://github.com/bestiejs/json3)
-* [nbind](https://github.com/charto/nbind) C/C++ Addons
 * [18next](http://i18next.com/)
 * [laverna](https://github.com/Laverna/laverna) open source alternative to Evernote
 * https://github.com/ether/etherpad-lite  real-time collaborative document editing
@@ -630,45 +495,6 @@ new webpack.ProvidePlugin({
 * https://codequs.com/p/r1GDakMK/deploying-a-node-js-app-to-digitalocean-server/
 
 
-# frontend
-* react 136 KB
-  * react-dom 706 B
-  * react-with-addons 148 KB
-  * react-art
-  * redux
-  * react-router
-  * react-router-redux
-  * react-style
-  * history
-  * fixed-data-table
-* d3
-  * d3-shape 26.2 KB
-    * d3-path 2.1 KB
-  * d3-scale 19 KB
-    * d3-array 5.3 KB
-    * d3-collection 2.7 KB
-    * d3-interpolate 6.1 KB
-    * d3-color 8 KB
-    * d3-time 5.1 KB
-    * d3-time-format 18 KB
-    * d3-format 6.2 KB
-* lodash
-* jquery2 86 KB
-* moment 39.8 KB
-* immutable-js 57KB
-* d3fc
-* css-layout 10.4 KB
-* react-bootstrap
-  * dom-helpers
-  * react-overlays
-  * uncontrollable
-  * react-prop-types
-* invariant
-* warning
-* classnames
-* keycode
-
-
 # web
 scroll
 * window.pageYOffset
@@ -764,14 +590,6 @@ event
 * doTouchEnd(timeStamp)
 
 
-# lint
-setup
-```
-npm install --save-dev eslint eslint-config-airbnb
-```
-* http://abalone0204.github.io/2016/07/11/eslint-fxcking-setup/
-
-
 # 跨平台
 跨 browser, node, AMD ...
 * `typeof window !== "undefined"` browser
@@ -804,8 +622,6 @@ Steps 1, 3, and 4 apply to our current discussion. We'll skip over step 2 for no
 
 Object.setPrototypeOf(Buffer, Uint8Array);
 
-
-https://github.com/npm/npm 讀一下
 
 
 # IoT internet of things
@@ -911,7 +727,3 @@ while ((m = regex.exec(hash)) !== null) {
 }
 ```
 
-
-```
- ~~(Math.random() * MAX_UID) // "~~" acts like a faster Math.floor() here
-```
