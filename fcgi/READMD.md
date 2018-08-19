@@ -19,5 +19,7 @@
 * [FlatBuffers](http://google.github.io/flatbuffers/)
 * [mariadb-connector-c](https://mariadb.com/kb/en/library/mariadb-connector-c/)
 * [libcurl](https://curl.haxx.se/libcurl/c/libcurl.html)
+* [nghttp2](https://github.com/nghttp2/nghttp2)
+* [http-parser](https://github.com/nodejs/http-parser)
 * man urandom
 
