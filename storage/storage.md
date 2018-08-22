@@ -63,4 +63,12 @@ NAND flash
 
 # Perf Test
 
+* dd  /dev/zero  /dev/urandom
+* hdparam
 * https://github.com/axboe/fio
+
+# Key value store
+
+* https://github.com/google/leveldb
+* https://github.com/facebook/rocksdb
+* https://github.com/Microsoft/FASTER
