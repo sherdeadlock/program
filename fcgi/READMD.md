@@ -17,6 +17,7 @@
 
 * [Coroutines in C](https://www.chiark.greenend.org.uk/~sgtatham/coroutines.html)
 * [FlatBuffers](http://google.github.io/flatbuffers/)
+* [msgpack-lite](https://github.com/kawanet/msgpack-lite)
 * [mariadb-connector-c](https://mariadb.com/kb/en/library/mariadb-connector-c/)
 * [libcurl](https://curl.haxx.se/libcurl/c/libcurl.html)
 * [nghttp2](https://github.com/nghttp2/nghttp2)
