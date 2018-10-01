@@ -30,6 +30,31 @@ let panel = new Ext.Panel({
                             ],
                         }
                     }
+					, {
+						text: 'C',
+						scope: self,
+						handler: function() {
+							console.log('check C');
+						},
+						menu: {
+							items: [
+								{
+									text: 'C.1',
+									group: 'cc',
+									handler: function() {
+										console.log('check', 'C.1', this);
+									}
+								}
+								, {
+									text: 'C.2',
+									group: 'cc',
+									handler: function() {
+										console.log('check', 'C.2', this);
+									}
+								}
+							]
+						}
+					}
                 ],
             }),
 
