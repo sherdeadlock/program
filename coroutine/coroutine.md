@@ -3,6 +3,7 @@
 # c
 	* http://devdocs.io/c/program/setjmp
 	* https://github.com/cloudwu/coroutine/
+	* https://www.chiark.greenend.org.uk/~sgtatham/coroutines.html
 
 # js
 	* `function*`, `yield`, `yield*`
@@ -11,13 +12,6 @@
 
 # python
 	* generators/yield/
-
-# java
-	* CompletableFuture
-
-# c++
-	* http://www.cplusplus.com/reference/future/async/
-	* std::async, std::future
 
 # kotlin
 	* https://kotlinlang.org/docs/reference/coroutines.html
