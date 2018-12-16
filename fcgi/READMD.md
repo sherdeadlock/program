@@ -36,6 +36,14 @@ Example
 * [fastcgi with cpp](http://chriswu.me/blog/writing-hello-world-in-fcgi-with-c-plus-plus/)
 * [pthread](https://gist.github.com/dermesser/e2f9b66457ae19ebd116)
 
+nginx setting
+
+```
+location /foobar {
+	include fastcgi.conf;
+	fastcgi_pass 127.0.0.1:8888;
+}
+```
 
 libs
 ====
