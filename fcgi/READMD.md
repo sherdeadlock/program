@@ -26,8 +26,8 @@ ex2_tiny_cgi.c
 --------------
 
 1. `g++ ex2_tiny_fcgi.cpp -lfcgi++ -lfcgi -std=c++14`
-2. `curl http://localhost:8087/fcgi?a=1,b=2 -H "X-FOO:123" -H "x-bar:567" -X POST
-   -H 'Content-type:application/json' -d '{"foo":1,"bar":2}'`
+2. Apache conf `ProxyPass unix:/tmp/fcgi.sock|fcgi:`
+3. `curl http://localhost:8087/fcgi?a=1,b=2 -H "X-FOO:123" -H "x-bar:567" -X POST -H 'Content-type:application/json' -d '{"foo":1,"bar":2}'`
 
 
 Example
@@ -35,10 +35,6 @@ Example
 
 * [fastcgi with cpp](http://chriswu.me/blog/writing-hello-world-in-fcgi-with-c-plus-plus/)
 * [pthread](https://gist.github.com/dermesser/e2f9b66457ae19ebd116)
-
-```
-curl http://localhost:8087/fcgi?a=1,b=2 -H "X-FOO:123" -H "X-BAR:567" -X POST -d "param1=value1&param2=value2"
-```
 
 
 libs
