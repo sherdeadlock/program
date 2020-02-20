@@ -4,6 +4,7 @@ FastCGI
 * https://fast-cgi.github.io/
 * https://fastcgi-archives.github.io/
 * https://github.com/FastCGI-Archives/fcgi2
+* RFC 3875  The Common Gateway Interface (CGI) Version 1.1
 
 
 apache httpd
@@ -49,9 +50,10 @@ libs
 ====
 
 * [mariadb-connector-c](https://mariadb.com/kb/en/library/mariadb-connector-c/)
-* [libcurl](https://curl.haxx.se/libcurl/c/libcurl.html)
 * [json](https://github.com/nlohmann/json)
 * man urandom
+* libuv
+* https://github.com/nodejs/llhttp
 
 Others
 ------
@@ -60,4 +62,5 @@ Others
 * [msgpack-lite](https://github.com/kawanet/msgpack-lite)
 * [nghttp2](https://github.com/nghttp2/nghttp2)
 * [http-parser](https://github.com/nodejs/http-parser)
+* [libcurl](https://curl.haxx.se/libcurl/c/libcurl.html)
 
