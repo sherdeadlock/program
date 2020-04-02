@@ -31,3 +31,26 @@ $ virsh autostart kvm1
 
 Disable autostart VM
 $ virsh autostart kvm1 --disable
+
+## Disk
+
+Create Disk
+$ qemu-img create -f qcow2 disk2.img 8g
+
+Attach Disk
+$ virsh attach-disk vm_name disk.img vdc --live --persistent
+
+Detach Disk
+$ virsh detach-disk kvm1 vda --live
+
+
+
+## Network
+
+$ virsh net-list --all
+$ virsh net-start default
+
+Get IP
+$ virsh net-info default
+$ virsh net-dhcp-leases default
+
