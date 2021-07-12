@@ -90,3 +90,5 @@
 	* `@WebMvcTest`  only instantiating the web layer
 	* `@ContextConfiguration`  不會開啟除了context以外的功能
 	* `@TestConfiguration`
+* `@Async`
+    * AsyncUncaughtExceptionHandler
