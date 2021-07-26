@@ -1,0 +1,30 @@
+@startuml structure
+
+class Animatable
+class Transformable
+class Eventful
+class Element
+class Displayable
+
+
+Animatable <|-- Element
+Transformable <|-- Element
+Eventful <|-- Element
+Element <|-- Displayable
+Element <|-- Group
+Displayable <|-- Path
+Displayable <|-- Image
+Displayable <|-- Text
+
+Path <|-- Line
+Path <|-- Circle
+Path <|-- Rect
+Path <|-- CompoundPath
+
+Animatable --left-> Animator
+Element -> Gradient
+
+Gradient <|-- LinearGradient
+Gradient <|-- RadialGradient
+
+@enduml
