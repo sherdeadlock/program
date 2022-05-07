@@ -29,6 +29,7 @@ $ virsh start kvm1
 Stop VM
 
 ```
+$ virsh shutdown kvm1
 $ virsh destroy kvm1
 ```
 
@@ -36,6 +37,12 @@ Remove VM
 
 ```
 $ virsh undefine kvm1
+```
+
+Edit VM
+
+```
+$ virsh edit kvm1
 ```
 
 Enable Virsh Console Access For KVM Guests
@@ -49,6 +56,13 @@ Connect to VM
 
 ```
 $ virsh console kvm1
+```
+
+Get VNC display port
+
+```
+$ virsh vncdisplay kvm1
+$ virsh domdisplay kvm1
 ```
 
 Show info
